@@ -8,6 +8,8 @@
 #     MovieGenre.find_or_create_by!(name: genre_name)
 #   end
 # Seed the RottenPotatoes DB with some movies.
+Movie.destroy_all
+
 more_movies = [
   {:title => 'Aladdin', :rating => 'G',
     :release_date => '25-Nov-1992'},
